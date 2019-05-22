@@ -5,6 +5,8 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+    //String strCatName = nickNameEditText.getText().toString(); // приводим к типу String
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
