@@ -78,13 +78,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="E-mail"
-        app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/editEmail"
         android:layout_width="205dp"
         android:layout_height="38dp"
         android:layout_marginStart="8dp"
