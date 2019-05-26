@@ -10,16 +10,17 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    final EditText editUsername = findViewById(R.id.editName);
-    final EditText editEmail = findViewById(R.id.editEmail);
-    Button btnOK = (Button) findViewById(R.id.btnOK);
-    Button btnClear = (Button) findViewById(R.id.btnClear);
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final EditText editUsername = findViewById(R.id.editName);
+        final EditText editEmail = findViewById(R.id.editEmail);
+        Button btnOK = (Button) findViewById(R.id.btnOK);
+        Button btnClear = (Button) findViewById(R.id.btnClear);
 
         btnOK.setOnClickListener(new View.OnClickListener() {
             @Override
