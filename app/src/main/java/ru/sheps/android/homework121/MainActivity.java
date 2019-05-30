@@ -21,13 +21,12 @@ public class MainActivity extends AppCompatActivity {
         final EditText editEmail = findViewById(R.id.editEmail);
         Button btnOK = (Button) findViewById(R.id.btnOK);
         Button btnClear = (Button) findViewById(R.id.btnClear);
+        final String textMessage =  getString(R.string.massage1) + editUsername + getString(R.string.massage2)+ editEmail;
 
         btnOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "ПОдписка на рассылку успешно оформлена для пльзователя " + editUsername + " и направлена по адресу " + editEmail,
-                        Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(), textMessage, Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.CENTER, 0, 0);
                 toast.show();
             }
