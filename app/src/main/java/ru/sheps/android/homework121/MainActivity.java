@@ -17,11 +17,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final EditText editUsername = findViewById(R.id.editName);
-        final EditText editEmail = findViewById(R.id.editEmail);
+        final EditText username = (EditText)findViewById(R.id.editName);
+        final EditText email = (EditText)findViewById(R.id.editEmail);
         Button btnOK = (Button) findViewById(R.id.btnOK);
         Button btnClear = (Button) findViewById(R.id.btnClear);
-        final String textMessage =  getString(R.string.massage1) + editUsername + getString(R.string.massage2)+ editEmail;
+        final String textMessage =  getString(R.string.massage1) + username + getString(R.string.massage2)+ email;
 
         btnOK.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         btnClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editUsername.setText("");
-                editEmail.setText("");
+                username.setText("");
+                email.setText("");
             }
         });
     }
