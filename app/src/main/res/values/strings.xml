@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Homework.1.2.1</string>
-    <string name="massage1">ПОдписка на рассылку успешно оформлена для пльзователя  </string>
+    <string name="massage1">Подписка на рассылку успешно оформлена для пользователя  </string>
     <string name="massage2"> и направлена по адресу </string>
     <string name="buttonClean">Очистить</string>
     <string name="btnOK">OK</string>
