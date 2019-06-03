@@ -10,8 +10,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         btnOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String textMessage =  getString(R.string.massage1) + " " + username.getText().toString() + getString(R.string.massage2)+ " " +  email.getText().toString();
+                final String textMessage =  getString(R.string.massage1) + " " + username.getText().toString() + " " + getString(R.string.massage2)+ " " +  email.getText().toString();
                 Toast toast = Toast.makeText(getApplicationContext(), textMessage, Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.CENTER, 0, 0);
                 toast.show();
